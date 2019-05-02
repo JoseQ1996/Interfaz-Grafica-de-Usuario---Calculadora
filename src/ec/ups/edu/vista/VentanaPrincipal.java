@@ -7,17 +7,23 @@
 package ec.ups.edu.vista;
 
 /**
- *
- * @author Usuario
+ *Interfaz Grafica de la Calculadora
+ * 
+ * @author José Quinde
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form VentanaPrincipal
      */
+    //Declaracion variables
     private String cadena;
     private double n1;
     private int op;
+    /**
+     * Constructor que inicializa componentes y variables
+     * 
+     */
     public VentanaPrincipal() {
         initComponents();
         cadena="";
@@ -284,13 +290,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 3 al txtArea:
         cadena=cadena+"3";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 1 al txtArea:
         cadena=cadena+"1";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn1ActionPerformed
@@ -302,56 +308,56 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 4 al txtArea:
         cadena=cadena+"4";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 5 al txtArea:
         cadena=cadena+"5";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 6 al txtArea:
         cadena=cadena+"6";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 7 al txtArea:
         cadena=cadena+"7";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 8 al txtArea:
         cadena=cadena+"8";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 9 al txtArea:
         cadena=cadena+"9";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        // TODO add your handling code here:
+        // ingresa el numero 0 al txtArea:
         cadena=cadena+"0";
         txtArea.setText(cadena);
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
-        // TODO add your handling code here:
+        // ingresa el punto al txtArea:
         cadena=cadena+".";
         
         txtArea.setText(cadena);
     }//GEN-LAST:event_btnPuntoActionPerformed
 
     private void btnRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespuestaActionPerformed
-        // TODO add your handling code here:
+        // Muestra la Respuesta:
         if(op==1){
         n1=n1+Double.parseDouble(txtArea.getText());
         cadena="";
@@ -375,7 +381,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRespuestaActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
-        // TODO add your handling code here:
+        // Realiza la suma:
         n1=Double.parseDouble(txtArea.getText());
         cadena="";
         txtArea.setText(cadena); 
@@ -385,7 +391,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
-        // TODO add your handling code here:
+        // Realiza la resta:
         n1=Double.parseDouble(txtArea.getText());
         cadena="";
         txtArea.setText(cadena); 
@@ -393,7 +399,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
-        // TODO add your handling code here:
+        // realiza la multiplicacion:
         n1=Double.parseDouble(txtArea.getText());
         cadena="";
         txtArea.setText(cadena); 
@@ -401,7 +407,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
-        // TODO add your handling code here:
+        // realiza la division:
         n1=Double.parseDouble(txtArea.getText());
         cadena="";
         txtArea.setText(cadena); 
